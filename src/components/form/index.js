@@ -29,6 +29,8 @@ function handleSubmit(e){
 
   function restMethodFun(e) {
     setrestMethod(e.target.id); // we use according to the id for every method
+    settextArea(false);
+
   }
 
   function textAreaFun(e) {

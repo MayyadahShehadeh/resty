@@ -1,11 +1,13 @@
 import React from 'react';
+import Loading from '../Loading/loading';
+import ReactJson from "react-json-view";
 
 function Results(props) {
   return (
     <>
-       <section>
-        <pre>{props.data ? JSON.stringify(props.data, undefined, 2) : null}</pre>
-      </section>
+       <>
+        <pre>{props.data ?<ReactJson src={props.data} /> :<Loading/>}</pre>
+      </>
     </>
   )
 }
